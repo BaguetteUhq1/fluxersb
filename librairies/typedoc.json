@@ -1,0 +1,18 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+    "entryPoints": [
+        "./index.ts"
+    ],
+    "out": "docs",
+    "name": "Fluxer-Selfbot.js API",
+    "includeVersion": true,
+    "plugin": [],
+    "hideGenerator": true,
+    "excludePrivate": true,
+    "excludeProtected": false,
+    "excludeExternals": true,
+    "cleanOutputDir": true,
+    "theme": "default",
+    "readme": "README.md",
+    "githubPages": true
+}

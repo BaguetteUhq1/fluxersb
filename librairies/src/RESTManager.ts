@@ -16,7 +16,7 @@ export class RESTManager {
      * @param endpoint Chemin de l'API (ex: /channels/123/messages)
      * @param data Données à envoyer (optionnel)
      */
-    public async request(method: string, endpoint: string, data?: unknown) {
+    public async request<T = any>(method: string, endpoint: string, data?: unknown): Promise<T> {
         const apiUrl = `${this.baseUrl}${endpoint}`;
 
         for (let attempt = 0; attempt < 10; attempt++) {
@@ -49,13 +49,13 @@ export class RESTManager {
                         throw new Error(`[${response.status}] HTTP Error`);
                     }
                     // Autre erreur fatale (401, 403, 404...)
-                    return { error: true, status: response.status, message: text };
+                    return { error: true, status: response.status, message: text } as any as T;
                 }
 
                 try {
-                    return JSON.parse(text);
+                    return JSON.parse(text) as T;
                 } catch {
-                    return text;
+                    return text as any as T;
                 }
             } catch (_error: unknown) {
                 // Pause de 1s avant retry
@@ -63,6 +63,6 @@ export class RESTManager {
             }
         }
 
-        return { error: true, message: "Échec après 10 tentatives" };
+        return { error: true, message: "Échec après 10 tentatives" } as any as T;
     }
 }

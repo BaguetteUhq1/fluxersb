@@ -3,9 +3,16 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "build": "bun build ./index.ts --outdir ./dist --target node --minify",
+    "clean": "rm -rf dist",
+    "docs:generate": "typedoc",
+    "docs:mcp": "typedoc --json ./dist/mcp-context.json"
+  },
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/ws": "^8.18.1"
+    "@types/ws": "^8.18.1",
+    "typedoc": "^0.28.17"
   },
   "peerDependencies": {
     "typescript": "^5"
