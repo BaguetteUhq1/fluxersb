@@ -17,14 +17,17 @@ const HelpCommand: Command = {
 				helpMsg += `\`${prefix}${cmd.name}\` - ${cmd.description}\n`;
 			});
 			helpMsg += `\nUtilisez \`${prefix}help <commande>\` pour plus d'infos.`;
-			await client.sendMessage(message?.channel_id, helpMsg);
+			await client.sendMessage(message.channel_id, helpMsg);
 		} else {
-			const commandName = args[0].toLowerCase();
+			const commandName = args[0]?.toLowerCase();
+
+			if (!commandName) return;
+
 			const command = client.commands.get(commandName);
 
 			if (!command) {
 				await client.sendMessage(
-					message?.channel_id,
+					message.channel_id,
 					`❌ Commande \`${commandName}\` introuvable.`,
 				);
 				return;
@@ -35,10 +38,10 @@ const HelpCommand: Command = {
 				`📝 **Description :** ${command.description}\n` +
 				`🚀 **Usage :** \`${command.usage}\``;
 
-			await client.sendMessage(message?.channel_id, helpMsg);
+			await client.sendMessage(message.channel_id, helpMsg);
 		}
 		logger.info(
-			`Aide demandée par ${message?.author?.username || "Inconnu"} dans ${message?.channel_id}`,
+			`Aide demandée par ${message.author?.username || "Inconnu"} dans ${message.channel_id}`,
 		);
 	},
 };
