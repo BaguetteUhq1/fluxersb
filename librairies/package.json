@@ -6,13 +6,17 @@
   "scripts": {
     "build": "bun build ./index.ts --outdir ./dist --target node --minify",
     "clean": "rm -rf dist",
-    "docs:generate": "typedoc",
+    "docs:dev": "vitepress dev wiki",
+    "docs:build": "typedoc && vitepress build wiki",
     "docs:mcp": "typedoc --json ./dist/mcp-context.json"
   },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/ws": "^8.18.1",
-    "typedoc": "^0.28.17"
+    "typedoc": "^0.28.17",
+    "typedoc-plugin-markdown": "^4.10.0",
+    "typedoc-vitepress-theme": "^1.1.2",
+    "vitepress": "^1.6.4"
   },
   "peerDependencies": {
     "typescript": "^5"

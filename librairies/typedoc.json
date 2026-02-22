@@ -3,16 +3,16 @@
     "entryPoints": [
         "./index.ts"
     ],
-    "out": "docs",
-    "name": "Fluxer-Selfbot.js API",
+    "out": "wiki/api",
+    "name": "Fluxer-Selfbot.js APIReference",
     "includeVersion": true,
-    "plugin": [],
+    "plugin": [
+        "typedoc-plugin-markdown"
+    ],
     "hideGenerator": true,
     "excludePrivate": true,
     "excludeProtected": false,
     "excludeExternals": true,
     "cleanOutputDir": true,
-    "theme": "default",
-    "readme": "README.md",
-    "githubPages": true
+    "readme": "none"
 }
