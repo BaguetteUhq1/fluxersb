@@ -1,6 +1,6 @@
 import { FluxerClient } from "./index";
 
-const TOKEN = process.env.FLUXER_TOKEN;
+const TOKEN = process.env.TOKEN;
 
 if (!TOKEN) {
     console.error("❌ ERREUR : Le FLUXER_TOKEN est manquant ! Veuillez créer un fichier .env contenant FLUXER_TOKEN=\"votre_token\"");
