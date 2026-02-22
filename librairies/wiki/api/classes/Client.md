@@ -6,7 +6,7 @@
 
 # Class: Client
 
-Defined in: [Client.ts:10](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L10)
+Defined in: [Client.ts:10](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L10)
 
 Le Client principal pour interagir avec Fluxer.
 Gère la connexion Gateway (WebSocket) et fournit des méthodes pour l'API REST.
@@ -21,7 +21,7 @@ Gère la connexion Gateway (WebSocket) et fournit des méthodes pour l'API REST.
 
 > **new Client**(`token`): `Client`
 
-Defined in: [Client.ts:27](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L27)
+Defined in: [Client.ts:27](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L27)
 
 Crée une instance du client Fluxer.
 
@@ -47,7 +47,7 @@ Votre jeton d'authentification Fluxer.
 
 > `readonly` **rest**: [`RESTManager`](RESTManager.md)
 
-Defined in: [Client.ts:14](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L14)
+Defined in: [Client.ts:14](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L14)
 
 Gestionnaire REST interne
 
@@ -57,7 +57,7 @@ Gestionnaire REST interne
 
 > **user**: [`User`](../interfaces/User.md) \| `null` = `null`
 
-Defined in: [Client.ts:16](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L16)
+Defined in: [Client.ts:16](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L16)
 
 Données de l'utilisateur connecté (disponible après l'évènement 'ready')
 
@@ -67,7 +67,7 @@ Données de l'utilisateur connecté (disponible après l'évènement 'ready')
 
 > **addGroupDMRecipient**(`channelId`, `userId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:174](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L174)
+Defined in: [Client.ts:174](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L174)
 
 Ajoute un utilisateur à un groupe DM.
 
@@ -95,7 +95,7 @@ Identifiant de l'utilisateur à ajouter.
 
 > **addReaction**(`channelId`, `messageId`, `emoji`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:339](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L339)
+Defined in: [Client.ts:339](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L339)
 
 Ajoute une réaction à un message.
 
@@ -129,7 +129,7 @@ L'emoji à ajouter.
 
 > **addRoleToMember**(`guildId`, `userId`, `roleId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:602](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L602)
+Defined in: [Client.ts:602](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L602)
 
 Ajoute un rôle à un membre.
 
@@ -163,7 +163,7 @@ Identifiant du rôle.
 
 > **banUser**(`guildId`, `userId`, `reason?`, `deleteMessageDays?`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:536](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L536)
+Defined in: [Client.ts:536](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L536)
 
 Bannit un utilisateur d'un serveur.
 
@@ -203,7 +203,7 @@ Nombre de jours de messages à supprimer (0-7).
 
 > **bulkCreateEmojis**(`guildId`, `emojis`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:640](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L640)
+Defined in: [Client.ts:640](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L640)
 
 Crée plusieurs emojis d'un coup.
 
@@ -231,7 +231,7 @@ Liste des emojis (name, image).
 
 > **bulkCreateStickers**(`guildId`, `stickers`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:685](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L685)
+Defined in: [Client.ts:685](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L685)
 
 Crée plusieurs stickers d'un coup.
 
@@ -259,7 +259,7 @@ Liste des stickers.
 
 > **bulkDeleteMessages**(`channelId`, `messageIds`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:278](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L278)
+Defined in: [Client.ts:278](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L278)
 
 #### Parameters
 
@@ -281,7 +281,7 @@ Defined in: [Client.ts:278](https://github.com/BaguetteUhq1/fluxersb/blob/14ec56
 
 > **createEmoji**(`guildId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:631](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L631)
+Defined in: [Client.ts:631](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L631)
 
 Crée un emoji dans un serveur.
 
@@ -315,7 +315,7 @@ Données de l'emoji (name, image...).
 
 > **createGuild**(`data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:389](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L389)
+Defined in: [Client.ts:389](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L389)
 
 Crée un nouveau serveur.
 
@@ -343,7 +343,7 @@ Données du serveur (name, icon...).
 
 > **createGuildChannel**(`guildId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:439](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L439)
+Defined in: [Client.ts:439](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L439)
 
 Crée un canal dans un serveur.
 
@@ -371,7 +371,7 @@ Données du canal (name, type...).
 
 > **createInvite**(`channelId`, `data?`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:731](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L731)
+Defined in: [Client.ts:731](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L731)
 
 Crée une invitation pour un canal.
 
@@ -399,7 +399,7 @@ Paramètres de l'invitation (max_age, max_uses...).
 
 > **createRole**(`guildId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:564](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L564)
+Defined in: [Client.ts:564](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L564)
 
 Crée un rôle dans un serveur.
 
@@ -427,7 +427,7 @@ Données du rôle (name, color, permissions...).
 
 > **createSticker**(`guildId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:676](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L676)
+Defined in: [Client.ts:676](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L676)
 
 Crée un sticker dans un serveur.
 
@@ -455,7 +455,7 @@ Données du sticker (name, description, tags, image...).
 
 > **createWebhook**(`channelId`, `name`, `avatar?`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:759](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L759)
+Defined in: [Client.ts:759](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L759)
 
 Crée un nouveau webhook dans un canal.
 
@@ -489,7 +489,7 @@ Image de profil (base64, optionnel).
 
 > **deleteAttachment**(`channelId`, `messageId`, `attachmentId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:274](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L274)
+Defined in: [Client.ts:274](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L274)
 
 Supprime un fichier joint d'un message.
 
@@ -523,7 +523,7 @@ Identifiant du fichier joint.
 
 > **deleteChannel**(`channelId`, `silent?`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:165](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L165)
+Defined in: [Client.ts:165](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L165)
 
 Supprime un canal ou ferme un DM.
 
@@ -551,7 +551,7 @@ Si vrai, ne pas envoyer de notification de suppression.
 
 > **deleteEmoji**(`guildId`, `emojiId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:659](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L659)
+Defined in: [Client.ts:659](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L659)
 
 Supprime un emoji.
 
@@ -579,7 +579,7 @@ Identifiant de l'emoji.
 
 > **deleteGuild**(`guildId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:414](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L414)
+Defined in: [Client.ts:414](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L414)
 
 Supprime un serveur.
 
@@ -601,7 +601,7 @@ Identifiant du serveur.
 
 > **deleteInvite**(`code`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:722](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L722)
+Defined in: [Client.ts:722](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L722)
 
 Supprime (révoque) une invitation.
 
@@ -623,7 +623,7 @@ Le code d'invitation.
 
 > **deleteMessage**(`channelId`, `messageId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:264](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L264)
+Defined in: [Client.ts:264](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L264)
 
 Supprime un message.
 
@@ -651,7 +651,7 @@ Identifiant du message.
 
 > **deletePermissionOverwrite**(`channelId`, `overwriteId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:203](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L203)
+Defined in: [Client.ts:203](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L203)
 
 Supprime une permission spécifique pour un rôle ou un membre dans un canal.
 
@@ -679,7 +679,7 @@ Identifiant du rôle ou du membre.
 
 > **deleteRole**(`guildId`, `roleId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:592](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L592)
+Defined in: [Client.ts:592](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L592)
 
 Supprime un rôle d'un serveur.
 
@@ -707,7 +707,7 @@ Identifiant du rôle.
 
 > **deleteSticker**(`guildId`, `stickerId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:704](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L704)
+Defined in: [Client.ts:704](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L704)
 
 Supprime un sticker.
 
@@ -735,7 +735,7 @@ Identifiant du sticker.
 
 > **deleteWebhook**(`webhookId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:803](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L803)
+Defined in: [Client.ts:803](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L803)
 
 Supprime un webhook (nécessite un token bot).
 
@@ -757,7 +757,7 @@ Identifiant du webhook.
 
 > **deleteWebhookWithToken**(`webhookId`, `token`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:812](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L812)
+Defined in: [Client.ts:812](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L812)
 
 Supprime un webhook via son jeton.
 
@@ -785,7 +785,7 @@ Jeton du webhook.
 
 > **editMessage**(`channelId`, `messageId`, `content`): `Promise`\<[`Message`](../interfaces/Message.md)\>
 
-Defined in: [Client.ts:254](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L254)
+Defined in: [Client.ts:254](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L254)
 
 Modifie un message existant.
 
@@ -819,7 +819,7 @@ Nouveau contenu ou options de modification.
 
 > **executeWebhook**(`webhookId`, `token`, `data`, `wait?`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:823](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L823)
+Defined in: [Client.ts:823](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L823)
 
 Exécute un webhook via son jeton.
 
@@ -859,7 +859,7 @@ Si vrai, attendre la réponse de l'API pour obtenir l'objet message.
 
 > **getBans**(`guildId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:525](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L525)
+Defined in: [Client.ts:525](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L525)
 
 Liste les bannissements d'un serveur.
 
@@ -881,7 +881,7 @@ Identifiant du serveur.
 
 > **getChannel**(`channelId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:147](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L147)
+Defined in: [Client.ts:147](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L147)
 
 Récupère un canal par son identifiant.
 
@@ -903,7 +903,7 @@ Identifiant du canal.
 
 > **getChannelWebhooks**(`channelId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:749](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L749)
+Defined in: [Client.ts:749](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L749)
 
 Liste les webhooks d'un canal.
 
@@ -925,7 +925,7 @@ Identifiant du canal.
 
 > **getEmojis**(`guildId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:622](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L622)
+Defined in: [Client.ts:622](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L622)
 
 Liste les emojis d'un serveur.
 
@@ -947,7 +947,7 @@ Identifiant du serveur.
 
 > **getGatewayBot**(): `Promise`\<`any`\>
 
-Defined in: [Client.ts:130](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L130)
+Defined in: [Client.ts:130](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L130)
 
 Récupère l'URL de connexion au Gateway pour un bot.
 
@@ -961,7 +961,7 @@ Récupère l'URL de connexion au Gateway pour un bot.
 
 > **getGuild**(`guildId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:397](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L397)
+Defined in: [Client.ts:397](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L397)
 
 Récupère les informations d'un serveur.
 
@@ -983,7 +983,7 @@ Identifiant du serveur.
 
 > **getGuildChannels**(`guildId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:430](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L430)
+Defined in: [Client.ts:430](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L430)
 
 Liste les canaux d'un serveur.
 
@@ -1005,7 +1005,7 @@ Identifiant du serveur.
 
 > **getGuildMember**(`guildId`, `userId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:478](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L478)
+Defined in: [Client.ts:478](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L478)
 
 Récupère un membre spécifique d'un serveur.
 
@@ -1033,7 +1033,7 @@ Identifiant de l'utilisateur.
 
 > **getGuildMembers**(`guildId`, `options?`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:457](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L457)
+Defined in: [Client.ts:457](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L457)
 
 Liste les membres d'un serveur.
 
@@ -1067,7 +1067,7 @@ Options de pagination (limit, after).
 
 > **getGuildVanityUrl**(`guildId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:422](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L422)
+Defined in: [Client.ts:422](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L422)
 
 Récupère l'URL personnalisée (vanity) d'un serveur.
 
@@ -1089,7 +1089,7 @@ Identifiant du serveur.
 
 > **getGuildWebhooks**(`guildId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:741](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L741)
+Defined in: [Client.ts:741](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L741)
 
 Liste les webhooks d'un serveur.
 
@@ -1111,7 +1111,7 @@ Identifiant du serveur.
 
 > **getInstance**(): `Promise`\<`any`\>
 
-Defined in: [Client.ts:137](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L137)
+Defined in: [Client.ts:137](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L137)
 
 Récupère les informations de l'instance Fluxer.
 
@@ -1125,7 +1125,7 @@ Récupère les informations de l'instance Fluxer.
 
 > **getInvite**(`code`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:714](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L714)
+Defined in: [Client.ts:714](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L714)
 
 Récupère les informations d'une invitation.
 
@@ -1147,7 +1147,7 @@ Le code d'invitation.
 
 > **getMeMember**(`guildId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:469](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L469)
+Defined in: [Client.ts:469](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L469)
 
 Récupère les informations de membre de l'utilisateur connecté dans un serveur.
 
@@ -1169,7 +1169,7 @@ Identifiant du serveur.
 
 > **getMessage**(`channelId`, `messageId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:244](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L244)
+Defined in: [Client.ts:244](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L244)
 
 Récupère un message spécifique.
 
@@ -1197,7 +1197,7 @@ Identifiant du message.
 
 > **getMessages**(`channelId`, `options?`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:224](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L224)
+Defined in: [Client.ts:224](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L224)
 
 Récupère les derniers messages d'un canal.
 
@@ -1239,7 +1239,7 @@ Options de pagination (limit, before, after, around).
 
 > **getPinnedMessages**(`channelId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:296](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L296)
+Defined in: [Client.ts:296](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L296)
 
 Liste les messages épinglés d'un canal.
 
@@ -1261,7 +1261,7 @@ Identifiant du canal.
 
 > **getReactions**(`channelId`, `messageId`, `emoji`, `options?`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:325](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L325)
+Defined in: [Client.ts:325](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L325)
 
 Récupère la liste des utilisateurs ayant réagi avec un emoji spécifique.
 
@@ -1307,7 +1307,7 @@ Options de pagination (limit, after).
 
 > **getRoles**(`guildId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:555](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L555)
+Defined in: [Client.ts:555](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L555)
 
 Liste les rôles d'un serveur.
 
@@ -1329,7 +1329,7 @@ Identifiant du serveur.
 
 > **getStickers**(`guildId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:667](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L667)
+Defined in: [Client.ts:667](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L667)
 
 Liste les stickers d'un serveur.
 
@@ -1351,7 +1351,7 @@ Identifiant du serveur.
 
 > **getUser**(`userId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:831](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L831)
+Defined in: [Client.ts:831](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L831)
 
 Récupère les informations d'un utilisateur.
 
@@ -1373,7 +1373,7 @@ Identifiant de l'utilisateur.
 
 > **getWebhook**(`webhookId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:767](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L767)
+Defined in: [Client.ts:767](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L767)
 
 Récupère un webhook via son identifiant (nécessite un token bot).
 
@@ -1395,7 +1395,7 @@ Identifiant du webhook.
 
 > **getWebhookWithToken**(`webhookId`, `token`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:776](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L776)
+Defined in: [Client.ts:776](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L776)
 
 Récupère un webhook via son identifiant et son jeton.
 
@@ -1423,7 +1423,7 @@ Jeton du webhook.
 
 > **kickMember**(`guildId`, `userId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:506](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L506)
+Defined in: [Client.ts:506](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L506)
 
 Expulse un membre d'un serveur.
 
@@ -1451,7 +1451,7 @@ Identifiant de l'utilisateur.
 
 > **login**(): `void`
 
-Defined in: [Client.ts:37](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L37)
+Defined in: [Client.ts:37](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L37)
 
 Initialise la connexion au Gateway Fluxer.
 Émet l'évènement 'ready' une fois connecté.
@@ -1466,7 +1466,7 @@ Initialise la connexion au Gateway Fluxer.
 
 > **pinMessage**(`channelId`, `messageId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:305](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L305)
+Defined in: [Client.ts:305](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L305)
 
 Épingle un message.
 
@@ -1494,7 +1494,7 @@ Identifiant du message.
 
 > **removeAllReactions**(`channelId`, `messageId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:379](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L379)
+Defined in: [Client.ts:379](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L379)
 
 Retire toutes les réactions d'un message.
 
@@ -1522,7 +1522,7 @@ Identifiant du message.
 
 > **removeAllReactionsForEmoji**(`channelId`, `messageId`, `emoji`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:370](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L370)
+Defined in: [Client.ts:370](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L370)
 
 Retire toutes les réactions d'un emoji spécifique sur un message.
 
@@ -1556,7 +1556,7 @@ L'emoji.
 
 > **removeGroupDMRecipient**(`channelId`, `userId`, `silent?`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:184](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L184)
+Defined in: [Client.ts:184](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L184)
 
 Retire un utilisateur d'un groupe DM.
 
@@ -1590,7 +1590,7 @@ Si vrai, ne pas envoyer de notification.
 
 > **removeOwnReaction**(`channelId`, `messageId`, `emoji`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:349](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L349)
+Defined in: [Client.ts:349](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L349)
 
 Retire sa propre réaction d'un message.
 
@@ -1624,7 +1624,7 @@ L'emoji à retirer.
 
 > **removeRoleFromMember**(`guildId`, `userId`, `roleId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:612](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L612)
+Defined in: [Client.ts:612](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L612)
 
 Retire un rôle à un membre.
 
@@ -1658,7 +1658,7 @@ Identifiant du rôle.
 
 > **removeUserReaction**(`channelId`, `messageId`, `emoji`, `userId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:360](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L360)
+Defined in: [Client.ts:360](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L360)
 
 Retire la réaction d'un autre utilisateur.
 
@@ -1698,7 +1698,7 @@ Identifiant de l'utilisateur.
 
 > **reorderGuildChannels**(`guildId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:448](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L448)
+Defined in: [Client.ts:448](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L448)
 
 Réordonne les canaux d'un serveur.
 
@@ -1726,7 +1726,7 @@ Tableau de réordonnancement.
 
 > **reorderRoles**(`guildId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:573](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L573)
+Defined in: [Client.ts:573](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L573)
 
 Réordonne les rôles d'un serveur.
 
@@ -1754,7 +1754,7 @@ Tableau de réordonnancement (id, position).
 
 > **sendMessage**(`channelId`, `content`): `Promise`\<[`Message`](../interfaces/Message.md)\>
 
-Defined in: [Client.ts:214](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L214)
+Defined in: [Client.ts:214](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L214)
 
 Envoie un message dans un canal.
 
@@ -1782,7 +1782,7 @@ Contenu du message ou options d'envoi.
 
 > **setPermissionOverwrite**(`channelId`, `overwriteId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:194](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L194)
+Defined in: [Client.ts:194](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L194)
 
 Définit ou modifie une permission pour un rôle ou un membre dans un canal.
 
@@ -1826,7 +1826,7 @@ Données de permission (allow/deny/type).
 
 > **transferOwnership**(`guildId`, `newOwnerId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:515](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L515)
+Defined in: [Client.ts:515](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L515)
 
 Transfère la propriété d'un serveur à un autre utilisateur.
 
@@ -1854,7 +1854,7 @@ Identifiant du nouvel utilisateur propriétaire.
 
 > **triggerTyping**(`channelId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:286](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L286)
+Defined in: [Client.ts:286](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L286)
 
 Déclenche l'indicateur "en train d'écrire" dans un canal.
 
@@ -1876,7 +1876,7 @@ Identifiant du canal.
 
 > **unbanUser**(`guildId`, `userId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:545](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L545)
+Defined in: [Client.ts:545](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L545)
 
 Débannit un utilisateur d'un serveur.
 
@@ -1904,7 +1904,7 @@ Identifiant de l'utilisateur.
 
 > **unpinMessage**(`channelId`, `messageId`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:314](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L314)
+Defined in: [Client.ts:314](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L314)
 
 Désépingle un message.
 
@@ -1932,7 +1932,7 @@ Identifiant du message.
 
 > **updateChannel**(`channelId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:156](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L156)
+Defined in: [Client.ts:156](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L156)
 
 Met à jour les paramètres d'un canal.
 
@@ -1960,7 +1960,7 @@ Données à modifier.
 
 > **updateEmoji**(`guildId`, `emojiId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:650](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L650)
+Defined in: [Client.ts:650](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L650)
 
 Met à jour un emoji.
 
@@ -1996,7 +1996,7 @@ Données à modifier (name).
 
 > **updateGuild**(`guildId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:406](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L406)
+Defined in: [Client.ts:406](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L406)
 
 Met à jour les paramètres d'un serveur.
 
@@ -2024,7 +2024,7 @@ Données à modifier.
 
 > **updateGuildMember**(`guildId`, `userId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:497](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L497)
+Defined in: [Client.ts:497](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L497)
 
 Met à jour le membre d'un serveur.
 
@@ -2058,7 +2058,7 @@ Données à modifier.
 
 > **updateMeMember**(`guildId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:487](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L487)
+Defined in: [Client.ts:487](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L487)
 
 Met à jour son propre profil de membre dans un serveur.
 
@@ -2086,7 +2086,7 @@ Données à modifier (nick, avatar...).
 
 > **updateRole**(`guildId`, `roleId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:583](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L583)
+Defined in: [Client.ts:583](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L583)
 
 Met à jour un rôle spécifique.
 
@@ -2120,7 +2120,7 @@ Données à modifier.
 
 > **updateSettings**(`settings`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:839](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L839)
+Defined in: [Client.ts:839](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L839)
 
 Met à jour les paramètres de l'utilisateur connecté (ex: statut personnalisé).
 
@@ -2142,7 +2142,7 @@ Objet contenant les paramètres à modifier.
 
 > **updateSticker**(`guildId`, `stickerId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:695](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L695)
+Defined in: [Client.ts:695](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L695)
 
 Met à jour un sticker.
 
@@ -2176,7 +2176,7 @@ Données à modifier.
 
 > **updateWebhook**(`webhookId`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:785](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L785)
+Defined in: [Client.ts:785](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L785)
 
 Met à jour un webhook (nécessite un token bot).
 
@@ -2204,7 +2204,7 @@ Données à modifier.
 
 > **updateWebhookWithToken**(`webhookId`, `token`, `data`): `Promise`\<`any`\>
 
-Defined in: [Client.ts:795](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/Client.ts#L795)
+Defined in: [Client.ts:795](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/Client.ts#L795)
 
 Met à jour un webhook via son jeton.
 

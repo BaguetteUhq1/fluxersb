@@ -7,6 +7,7 @@ export default defineConfig({
     themeConfig: {
         nav: [
             { text: 'Accueil', link: '/' },
+            { text: 'MCP', link: '/mcp' },
             { text: 'API Reference', link: '/api/' }
         ],
         sidebar: [
@@ -14,7 +15,8 @@ export default defineConfig({
                 text: 'Introduction',
                 items: [
                     { text: 'Installation', link: '/installation' },
-                    { text: 'Exemple', link: '/example' }
+                    { text: 'Exemple', link: '/example' },
+                    { text: 'AI & MCP', link: '/mcp' }
                 ]
             },
             {

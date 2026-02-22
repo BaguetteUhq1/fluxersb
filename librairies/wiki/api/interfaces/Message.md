@@ -6,7 +6,7 @@
 
 # Interface: Message
 
-Defined in: [types.ts:20](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L20)
+Defined in: [types.ts:20](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L20)
 
 Représente un message envoyé sur un canal.
 
@@ -16,7 +16,7 @@ Représente un message envoyé sur un canal.
 
 > **attachments**: `any`[]
 
-Defined in: [types.ts:42](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L42)
+Defined in: [types.ts:42](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L42)
 
 Fichiers joints
 
@@ -26,7 +26,7 @@ Fichiers joints
 
 > **author**: [`User`](User.md)
 
-Defined in: [types.ts:26](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L26)
+Defined in: [types.ts:26](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L26)
 
 Auteur du message
 
@@ -36,7 +36,7 @@ Auteur du message
 
 > **channel\_id**: `string`
 
-Defined in: [types.ts:24](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L24)
+Defined in: [types.ts:24](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L24)
 
 Identifiant du canal où le message a été envoyé
 
@@ -46,7 +46,7 @@ Identifiant du canal où le message a été envoyé
 
 > **content**: `string`
 
-Defined in: [types.ts:28](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L28)
+Defined in: [types.ts:28](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L28)
 
 Contenu textuel du message
 
@@ -56,7 +56,7 @@ Contenu textuel du message
 
 > **edited\_timestamp**: `string` \| `null`
 
-Defined in: [types.ts:32](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L32)
+Defined in: [types.ts:32](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L32)
 
 Heure de modification
 
@@ -66,7 +66,7 @@ Heure de modification
 
 > **embeds**: `any`[]
 
-Defined in: [types.ts:44](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L44)
+Defined in: [types.ts:44](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L44)
 
 Embeds
 
@@ -76,7 +76,7 @@ Embeds
 
 > **id**: `string`
 
-Defined in: [types.ts:22](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L22)
+Defined in: [types.ts:22](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L22)
 
 Identifiant unique du message
 
@@ -86,7 +86,7 @@ Identifiant unique du message
 
 > **mention\_everyone**: `boolean`
 
-Defined in: [types.ts:36](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L36)
+Defined in: [types.ts:36](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L36)
 
 Mentions everyone
 
@@ -96,7 +96,7 @@ Mentions everyone
 
 > **mention\_roles**: `string`[]
 
-Defined in: [types.ts:40](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L40)
+Defined in: [types.ts:40](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L40)
 
 Mentions rôles
 
@@ -106,7 +106,7 @@ Mentions rôles
 
 > **mentions**: [`User`](User.md)[]
 
-Defined in: [types.ts:38](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L38)
+Defined in: [types.ts:38](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L38)
 
 Mentions utilisateurs
 
@@ -116,7 +116,7 @@ Mentions utilisateurs
 
 > `optional` **reactions**: `any`[]
 
-Defined in: [types.ts:46](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L46)
+Defined in: [types.ts:46](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L46)
 
 Réactions
 
@@ -126,7 +126,7 @@ Réactions
 
 > **timestamp**: `string`
 
-Defined in: [types.ts:30](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L30)
+Defined in: [types.ts:30](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L30)
 
 Heure d'envoi
 
@@ -136,7 +136,7 @@ Heure d'envoi
 
 > **tts**: `boolean`
 
-Defined in: [types.ts:34](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L34)
+Defined in: [types.ts:34](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L34)
 
 TTS
 
@@ -146,6 +146,6 @@ TTS
 
 > **type**: `number`
 
-Defined in: [types.ts:48](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/types.ts#L48)
+Defined in: [types.ts:48](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L48)
 
 Type de message

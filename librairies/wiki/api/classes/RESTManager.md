@@ -6,7 +6,7 @@
 
 # Class: RESTManager
 
-Defined in: [RESTManager.ts:5](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/RESTManager.ts#L5)
+Defined in: [RESTManager.ts:5](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/RESTManager.ts#L5)
 
 Gestionnaire des requêtes REST vers l'API Fluxer.
 Inclut une logique de redirection anti-détection et de retry automatique.
@@ -17,7 +17,7 @@ Inclut une logique de redirection anti-détection et de retry automatique.
 
 > **new RESTManager**(`token`): `RESTManager`
 
-Defined in: [RESTManager.ts:9](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/RESTManager.ts#L9)
+Defined in: [RESTManager.ts:9](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/RESTManager.ts#L9)
 
 #### Parameters
 
@@ -35,7 +35,7 @@ Defined in: [RESTManager.ts:9](https://github.com/BaguetteUhq1/fluxersb/blob/14e
 
 > **request**\<`T`\>(`method`, `endpoint`, `data?`): `Promise`\<`T`\>
 
-Defined in: [RESTManager.ts:19](https://github.com/BaguetteUhq1/fluxersb/blob/14ec567e41497392be822a5572d7e15423e8e56d/librairies/src/RESTManager.ts#L19)
+Defined in: [RESTManager.ts:19](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/RESTManager.ts#L19)
 
 Envoie une requête générique à l'API.
 
