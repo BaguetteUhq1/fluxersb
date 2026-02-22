@@ -5,7 +5,8 @@ import { join } from "node:path";
 import type { Command } from "./types/Command";
 import { createLogger } from "./utils/logger";
 
-const logger = createLogger("Gateway");
+const gatewayLogger = createLogger("Gateway");
+const loaderLogger = createLogger("Loader");
 
 export interface User {
 	id: string;
@@ -50,13 +51,13 @@ export default class FluxerClient extends EventEmitter {
 				const command: Command = (await import(join(categoryPath, file)))
 					.default;
 				this.commands.set(command.name, command);
-				logger.success(`Command loaded: ${command.name}`);
+				loaderLogger.success(`Command loaded: ${command.name}`);
 			}
 		}
 	}
 
 	public login() {
-		logger.info("Connecting to WebSocket...");
+		gatewayLogger.info("Connecting to WebSocket...");
 
 		this.ws = new WebSocket(this.url, {
 			headers: {
@@ -81,7 +82,7 @@ export default class FluxerClient extends EventEmitter {
 		});
 
 		this.ws.on("open", () => {
-			logger.success("WebSocket Connection Established.");
+			gatewayLogger.success("WebSocket Connection Established.");
 		});
 
 		this.ws.on("message", (data: WebSocket.RawData) => {
@@ -109,18 +110,20 @@ export default class FluxerClient extends EventEmitter {
 				case Opcode.HEARTBEAT_ACK:
 					break;
 				default:
-					logger.debug(`Unknown Opcode: ${op}`);
+					gatewayLogger.debug(`Unknown Opcode: ${op}`);
 			}
 		});
 
 		this.ws.on("close", (code) => {
-			logger.warn(`Connection closed (Code: ${code}). Reconnecting in 5s...`);
+			gatewayLogger.warn(
+				`Connection closed (Code: ${code}). Reconnecting in 5s...`,
+			);
 			this.stopHeartbeat();
 			setTimeout(() => this.login(), 5000);
 		});
 
 		this.ws.on("error", (error) => {
-			logger.error("WebSocket Error:", error);
+			gatewayLogger.error("WebSocket Error:", error);
 		});
 	}
 
@@ -177,12 +180,12 @@ export default class FluxerClient extends EventEmitter {
 			);
 
 			if (!response.ok) {
-				logger.error(`Failed to send message (HTTP ${response.status})`);
+				gatewayLogger.error(`Failed to send message (HTTP ${response.status})`);
 			}
 
 			return await response.json().catch(() => null);
 		} catch (error: unknown) {
-			logger.error(`Request failed:`, error);
+			gatewayLogger.error(`Request failed:`, error);
 		}
 	}
 }
