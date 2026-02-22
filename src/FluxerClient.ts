@@ -14,6 +14,13 @@ export interface User {
 	avatar?: string;
 }
 
+export interface Message {
+	id: string;
+	channel_id: string;
+	author: User;
+	content: string;
+}
+
 export enum Opcode {
 	DISPATCH = 0,
 	HEARTBEAT = 1,
@@ -103,7 +110,7 @@ export default class FluxerClient extends EventEmitter {
 						this.user = d.user;
 						this.emit("ready", d.user);
 					} else if (t === "MESSAGE_CREATE") {
-						this.emit("messageCreate", d);
+						this.emit("messageCreate", d as Message);
 					}
 					this.emit("dispatch", t, d);
 					break;

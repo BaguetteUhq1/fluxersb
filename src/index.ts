@@ -1,5 +1,7 @@
-import FluxerClient, { type User } from "./FluxerClient";
+import FluxerClient, { type User, type Message } from "./FluxerClient";
 import { createLogger } from "./utils/logger";
+
+type RawMessage = Message | { message: Message };
 
 const logger = createLogger("Main");
 const TOKEN = process.env.TOKEN;
@@ -16,8 +18,8 @@ client.on("ready", (user: User) => {
 	logger.success(`Connecté en tant que ${user.username}#${user.id}`);
 });
 
-client.on("messageCreate", async (rawMessage) => {
-	const message = (rawMessage.message || rawMessage) as any;
+client.on("messageCreate", async (rawMessage: RawMessage) => {
+	const message = "message" in rawMessage ? rawMessage.message : rawMessage;
 
 	if (!client.user || message.author?.id !== client.user.id) return;
 	if (!message?.content || !message.content.startsWith(PREFIX)) return;
@@ -32,7 +34,6 @@ client.on("messageCreate", async (rawMessage) => {
 		try {
 			await command.run(client, message, args);
 		} catch (error: unknown) {
-			// Added type annotation
 			logger.error(`Erreur lors de l'exécution de ${commandName}:`, error);
 		}
 	}
