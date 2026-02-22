@@ -1,12 +1,12 @@
-[**Fluxer-Selfbot.js APIReference**](../README.md)
+[**Fluxer-Selfbot.js APIReference**](../index.md)
 
 ***
 
-[Fluxer-Selfbot.js APIReference](../README.md) / Opcode
+[Fluxer-Selfbot.js APIReference](../index.md) / Opcode
 
 # Enumeration: Opcode
 
-Defined in: [types.ts:136](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L136)
+Defined in: [types.ts:136](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L136)
 
 Codes d'opération du Gateway Fluxer.
 
@@ -16,7 +16,7 @@ Codes d'opération du Gateway Fluxer.
 
 > **DISPATCH**: `0`
 
-Defined in: [types.ts:138](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L138)
+Defined in: [types.ts:138](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L138)
 
 Évènement envoyé par le serveur
 
@@ -26,7 +26,7 @@ Defined in: [types.ts:138](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c310
 
 > **HEARTBEAT**: `1`
 
-Defined in: [types.ts:140](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L140)
+Defined in: [types.ts:140](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L140)
 
 Battement de cœur (Keep-alive)
 
@@ -36,7 +36,7 @@ Battement de cœur (Keep-alive)
 
 > **HEARTBEAT\_ACK**: `11`
 
-Defined in: [types.ts:146](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L146)
+Defined in: [types.ts:146](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L146)
 
 Accusé de réception du heartbeat
 
@@ -46,7 +46,7 @@ Accusé de réception du heartbeat
 
 > **HELLO**: `10`
 
-Defined in: [types.ts:144](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L144)
+Defined in: [types.ts:144](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L144)
 
 Premier message envoyé par le serveur pour donner l'intervalle de heartbeat
 
@@ -56,6 +56,6 @@ Premier message envoyé par le serveur pour donner l'intervalle de heartbeat
 
 > **IDENTIFY**: `2`
 
-Defined in: [types.ts:142](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L142)
+Defined in: [types.ts:142](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L142)
 
 Identification initiale

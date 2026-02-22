@@ -4,6 +4,7 @@ export default defineConfig({
     title: "Fluxer-Selfbot.js",
     description: "Documentation moderne pour la librairie Fluxer",
     ignoreDeadLinks: true,
+    cleanUrls: true,
     themeConfig: {
         nav: [
             { text: 'Accueil', link: '/' },

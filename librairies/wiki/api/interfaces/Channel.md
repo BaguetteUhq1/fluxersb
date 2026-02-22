@@ -1,12 +1,12 @@
-[**Fluxer-Selfbot.js APIReference**](../README.md)
+[**Fluxer-Selfbot.js APIReference**](../index.md)
 
 ***
 
-[Fluxer-Selfbot.js APIReference](../README.md) / Channel
+[Fluxer-Selfbot.js APIReference](../index.md) / Channel
 
 # Interface: Channel
 
-Defined in: [types.ts:79](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L79)
+Defined in: [types.ts:79](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L79)
 
 Représente un canal Fluxer.
 
@@ -16,7 +16,7 @@ Représente un canal Fluxer.
 
 > `optional` **application\_id**: `string`
 
-Defined in: [types.ts:96](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L96)
+Defined in: [types.ts:96](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L96)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [types.ts:96](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **bitrate**: `number`
 
-Defined in: [types.ts:90](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L90)
+Defined in: [types.ts:90](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L90)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [types.ts:90](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **guild\_id**: `string`
 
-Defined in: [types.ts:83](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L83)
+Defined in: [types.ts:83](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L83)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [types.ts:83](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **icon**: `string`
 
-Defined in: [types.ts:94](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L94)
+Defined in: [types.ts:94](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L94)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [types.ts:94](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > **id**: `string`
 
-Defined in: [types.ts:80](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L80)
+Defined in: [types.ts:80](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L80)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [types.ts:80](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **last\_message\_id**: `string`
 
-Defined in: [types.ts:89](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L89)
+Defined in: [types.ts:89](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L89)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [types.ts:89](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **name**: `string`
 
-Defined in: [types.ts:82](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L82)
+Defined in: [types.ts:82](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L82)
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: [types.ts:82](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **nsfw**: `boolean`
 
-Defined in: [types.ts:87](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L87)
+Defined in: [types.ts:87](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L87)
 
 ***
 
@@ -80,7 +80,7 @@ Defined in: [types.ts:87](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **owner\_id**: `string`
 
-Defined in: [types.ts:95](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L95)
+Defined in: [types.ts:95](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L95)
 
 ***
 
@@ -88,7 +88,7 @@ Defined in: [types.ts:95](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **parent\_id**: `string`
 
-Defined in: [types.ts:86](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L86)
+Defined in: [types.ts:86](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L86)
 
 ***
 
@@ -96,7 +96,7 @@ Defined in: [types.ts:86](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **permission\_overwrites**: `any`[]
 
-Defined in: [types.ts:85](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L85)
+Defined in: [types.ts:85](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L85)
 
 ***
 
@@ -104,7 +104,7 @@ Defined in: [types.ts:85](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **position**: `number`
 
-Defined in: [types.ts:84](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L84)
+Defined in: [types.ts:84](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L84)
 
 ***
 
@@ -112,7 +112,7 @@ Defined in: [types.ts:84](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **rate\_limit\_per\_user**: `number`
 
-Defined in: [types.ts:92](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L92)
+Defined in: [types.ts:92](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L92)
 
 ***
 
@@ -120,7 +120,7 @@ Defined in: [types.ts:92](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **recipients**: [`User`](User.md)[]
 
-Defined in: [types.ts:93](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L93)
+Defined in: [types.ts:93](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L93)
 
 ***
 
@@ -128,7 +128,7 @@ Defined in: [types.ts:93](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **topic**: `string`
 
-Defined in: [types.ts:88](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L88)
+Defined in: [types.ts:88](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L88)
 
 ***
 
@@ -136,7 +136,7 @@ Defined in: [types.ts:88](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > **type**: `number`
 
-Defined in: [types.ts:81](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L81)
+Defined in: [types.ts:81](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L81)
 
 ***
 
@@ -144,4 +144,4 @@ Defined in: [types.ts:81](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102
 
 > `optional` **user\_limit**: `number`
 
-Defined in: [types.ts:91](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/types.ts#L91)
+Defined in: [types.ts:91](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/types.ts#L91)

@@ -14,5 +14,6 @@
     "excludeProtected": false,
     "excludeExternals": true,
     "cleanOutputDir": true,
-    "readme": "none"
+    "readme": "none",
+    "entryFileName": "index.md"
 }

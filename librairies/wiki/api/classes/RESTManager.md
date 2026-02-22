@@ -1,12 +1,12 @@
-[**Fluxer-Selfbot.js APIReference**](../README.md)
+[**Fluxer-Selfbot.js APIReference**](../index.md)
 
 ***
 
-[Fluxer-Selfbot.js APIReference](../README.md) / RESTManager
+[Fluxer-Selfbot.js APIReference](../index.md) / RESTManager
 
 # Class: RESTManager
 
-Defined in: [RESTManager.ts:5](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/RESTManager.ts#L5)
+Defined in: [RESTManager.ts:5](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/RESTManager.ts#L5)
 
 Gestionnaire des requêtes REST vers l'API Fluxer.
 Inclut une logique de redirection anti-détection et de retry automatique.
@@ -17,7 +17,7 @@ Inclut une logique de redirection anti-détection et de retry automatique.
 
 > **new RESTManager**(`token`): `RESTManager`
 
-Defined in: [RESTManager.ts:9](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/RESTManager.ts#L9)
+Defined in: [RESTManager.ts:9](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/RESTManager.ts#L9)
 
 #### Parameters
 
@@ -35,7 +35,7 @@ Defined in: [RESTManager.ts:9](https://github.com/BaguetteUhq1/fluxersb/blob/0a0
 
 > **request**\<`T`\>(`method`, `endpoint`, `data?`): `Promise`\<`T`\>
 
-Defined in: [RESTManager.ts:19](https://github.com/BaguetteUhq1/fluxersb/blob/0a0c3102b14f71dea2e9297d00f055490e375f58/librairies/src/RESTManager.ts#L19)
+Defined in: [RESTManager.ts:19](https://github.com/BaguetteUhq1/fluxersb/blob/2422435e9822e39100e9982431b849f9256f3610/librairies/src/RESTManager.ts#L19)
 
 Envoie une requête générique à l'API.
 
