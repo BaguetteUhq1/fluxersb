@@ -1,4 +1,4 @@
-import FluxerClient, { type User, type Message } from "./FluxerClient";
+import FluxerClient, { type Message, type User } from "./FluxerClient";
 import { createLogger } from "./utils/logger";
 
 type RawMessage = Message | { message: Message };

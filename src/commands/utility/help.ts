@@ -9,7 +9,7 @@ const HelpCommand: Command = {
 		"Affiche la liste des commandes ou des informations sur une commande spécifique.",
 	usage: "!help [commande]",
 	run: async (client, message, args) => {
-		const prefix = "!"; // On peut le rendre dynamique plus tard si besoin
+		const prefix = "!";
 
 		if (args.length === 0) {
 			let helpMsg = "**Liste des commandes disponibles :**\n";
@@ -17,14 +17,14 @@ const HelpCommand: Command = {
 				helpMsg += `\`${prefix}${cmd.name}\` - ${cmd.description}\n`;
 			});
 			helpMsg += `\nUtilisez \`${prefix}help <commande>\` pour plus d'infos.`;
-			await client.sendMessage(message.channel_id, helpMsg);
+			await client.sendMessage(message?.channel_id, helpMsg);
 		} else {
 			const commandName = args[0].toLowerCase();
 			const command = client.commands.get(commandName);
 
 			if (!command) {
 				await client.sendMessage(
-					message.channel_id,
+					message?.channel_id,
 					`❌ Commande \`${commandName}\` introuvable.`,
 				);
 				return;
@@ -35,10 +35,10 @@ const HelpCommand: Command = {
 				`📝 **Description :** ${command.description}\n` +
 				`🚀 **Usage :** \`${command.usage}\``;
 
-			await client.sendMessage(message.channel_id, helpMsg);
+			await client.sendMessage(message?.channel_id, helpMsg);
 		}
 		logger.info(
-			`Aide demandée par ${message.author?.username || "Inconnu"} dans ${message.channel_id}`,
+			`Aide demandée par ${message?.author?.username || "Inconnu"} dans ${message?.channel_id}`,
 		);
 	},
 };

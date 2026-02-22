@@ -1,7 +1,7 @@
 import { EventEmitter } from "node:events";
-import WebSocket from "ws";
 import { readdirSync } from "node:fs";
 import { join } from "node:path";
+import WebSocket from "ws";
 import type { Command } from "./types/Command";
 import { createLogger } from "./utils/logger";
 
@@ -170,29 +170,94 @@ export default class FluxerClient extends EventEmitter {
 		}
 	}
 
-	public async sendMessage(channelId: string, content: string) {
-		try {
-			const response = await fetch(
-				`https://api.fluxer.app/v1/channels/${channelId}/messages`,
-				{
-					method: "POST",
+	private async request(method: string, endpoint: string, data?: unknown) {
+		const apiUrl = `https://api.fluxer.app/v1${endpoint}`;
+
+		for (let attempt = 0; attempt < 10; attempt++) {
+			try {
+				const response = await fetch(apiUrl, {
+					method,
 					headers: {
 						Authorization: this.token,
+						Accept: "*/*",
+						"Accept-Encoding": "gzip, deflate, br, zstd",
+						"Accept-Language": "en-US,en;q=0.9",
+						"Cache-Control": "no-cache",
 						"Content-Type": "application/json",
+						Origin: "https://web.fluxer.app",
+						Pragma: "no-cache",
+						"Sec-Fetch-Dest": "empty",
+						"Sec-Fetch-Mode": "cors",
+						"Sec-Fetch-Site": "same-site",
 						"User-Agent":
-							"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+							"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0",
 					},
-					body: JSON.stringify({ content }),
-				},
-			);
+					body: data ? JSON.stringify(data) : undefined,
+				});
 
-			if (!response.ok) {
-				gatewayLogger.error(`Failed to send message (HTTP ${response.status})`);
+				const text = await response.text();
+
+				if (!response.ok) {
+					if (response.status >= 500 || response.status === 429) {
+						throw new Error(`[${response.status}] HTTP Error`);
+					}
+					gatewayLogger.error(
+						`[REST ERREUR] ${method} ${endpoint} : ${response.status}`,
+						text,
+					);
+				}
+
+				try {
+					return JSON.parse(text);
+				} catch {
+					return text;
+				}
+			} catch (_error: unknown) {
+				await new Promise((resolve) => setTimeout(resolve, 1000));
 			}
-
-			return await response.json().catch(() => null);
-		} catch (error: unknown) {
-			gatewayLogger.error(`Request failed:`, error);
 		}
+
+		gatewayLogger.error(
+			`[REST FATAL] Échec après 10 tentatives pour ${method} ${endpoint}`,
+		);
+		return null;
+	}
+
+	public async sendMessage(channelId: string, content: string) {
+		return this.request("POST", `/channels/${channelId}/messages`, { content });
+	}
+
+	public async getMessages(channelId: string, limit: number = 50) {
+		return this.request(
+			"GET",
+			`/channels/${channelId}/messages?limit=${limit}`,
+		);
+	}
+
+	public async editMessage(
+		channelId: string,
+		messageId: string,
+		content: string,
+	) {
+		return this.request(
+			"PATCH",
+			`/channels/${channelId}/messages/${messageId}`,
+			{ content },
+		);
+	}
+
+	public async deleteMessage(channelId: string, messageId: string) {
+		return this.request(
+			"DELETE",
+			`/channels/${channelId}/messages/${messageId}`,
+		);
+	}
+
+	public async getUser(userId: string) {
+		return this.request("GET", `/users/${userId}`);
+	}
+
+	public async updateSettings(settings: unknown) {
+		return this.request("PATCH", "/users/@me/settings", settings);
 	}
 }
