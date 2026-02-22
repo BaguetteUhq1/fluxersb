@@ -1,15 +1,39 @@
 {
   "name": "fluxer-selfbot.js",
+  "version": "1.0.1",
+  "description": "Une bibliothèque puissante et furtive pour créer des selfbots sur Fluxer.app",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "module": "index.ts",
   "type": "module",
-  "private": true,
+  "private": false,
+  "author": "BaguetteUhq1",
+  "license": "MIT",
+  "keywords": [
+    "fluxer",
+    "selfbot",
+    "api",
+    "wrapper",
+    "discord-alternative"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaguetteUhq1/fluxersb.git"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "bun build ./index.ts --outdir ./dist --target node --minify",
+    "build:types": "tsc --emitDeclarationOnly",
     "clean": "rm -rf dist",
     "docs:dev": "vitepress dev wiki",
     "docs:build": "typedoc && vitepress build wiki",
     "docs:mcp": "typedoc --json ./dist/mcp-context.json",
-    "mcp:run": "bun run src/mcp-server.ts"
+    "mcp:run": "bun run src/mcp-server.ts",
+    "prepublishOnly": "bun run clean && bun run build && bun run build:types"
   },
   "devDependencies": {
     "@types/bun": "latest",
@@ -17,6 +41,7 @@
     "typedoc": "^0.28.17",
     "typedoc-plugin-markdown": "^4.10.0",
     "typedoc-vitepress-theme": "^1.1.2",
+    "typescript": "^5.0.0",
     "vitepress": "^1.6.4"
   },
   "peerDependencies": {
