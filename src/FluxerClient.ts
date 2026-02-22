@@ -94,6 +94,9 @@ export default class FluxerClient extends EventEmitter {
 				case Opcode.HELLO:
 					this.handleHello(d.heartbeat_interval);
 					break;
+				case Opcode.HEARTBEAT:
+					this.send(Opcode.HEARTBEAT, this.lastSequence);
+					break;
 				case Opcode.DISPATCH:
 					if (t === "READY") {
 						this.user = d.user;
